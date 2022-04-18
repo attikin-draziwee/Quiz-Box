@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Интеллектуальный вечер для шумной компании, игры на любой вкус. Event-агентство по устройству развлекательного контента для шумной компании.">
+    <title>Quiz-box | Главная</title>
+</head>
+
+<body>
+    <!-- Обвёртка для всего сайта, позволяет сделать его в контейнере -->
+    <div class="wrapper">
+        <!-- Шапка сайта -->
+        <header class="header menu">
+            <img src="./img/logo.png" alt="Quiz-box логотип" class="header__logo">
+            <ul class="header__nav nav">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Игры</a></li>
+                <li><a href="#">Отзывы</a></li>
+            </ul>
+            <div class="header__number number">
+                <h4><a href="tel:88007003030">8 800 700 30 30</a></h4>
+                <p>График работы</p>
+            </div>
+        </header>
+        <!-- Офферная конструкция для привлечения внимания -->
+        <section class="offer">
+            <h1>Интеллектуальный вечер для шумной компании</h1>
+            <h4>Игры на любой вкус</h4>
+            <input type="button" value="Подробнее" class="button button_fill">
+        </section>
+        <!-- Блок: Новинки недели -->
+        <section class="store">
+            <div class="store__title">
+                <h2>Новинки недели</h2><img src="./icons/store-new-badges.png" alt="New icon">
+            </div>
+            <!-- Wrapper для карточек для включения Flex-Box -->
+            <div class="store-wrapper">
+                <!-- Карточка Музыкальная игра -->
+                <article class="store__card">
+                    <img src="./img/music-quiz.png" alt="Music Quiz" class="store__card-logo">
+                    <h3 class="store__card-title">Музыкальная игра</h3>
+                    <div class="store__card-info">
+                        <div class="store__card-info-time">
+                            <img src="./icons/clock.png" alt="clock icon">
+                            <p>90 минут</p>
+                        </div>
+                        <div class="store__card-info-qa">
+                            <img src="./icons/qa.png" alt="qa icon">
+                            <p>70 вопросов</p>
+                        </div>
+                    </div>
+                    <div class="store__card-desc">
+                        <p>Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
+                    </div>
+                    <input type="button" value="Смотреть" class="button">
+                </article>
+                <!-- Карточка Назад в 90-е -->
+                <article class="store__card">
+                    <img src="./img/back-to-the-future.png" alt="back to the future" class="store__card-logo">
+                    <h3 class="store__card-title">Назад в 90-е</h3>
+                    <div class="store__card-info">
+                        <div class="store__card-info-time">
+                            <img src="./icons/clock.png" alt="clock icon">
+                            <p>90 минут</p>
+                        </div>
+                        <div class="store__card-info-qa">
+                            <img src="./icons/qa.png" alt="qa icon">
+                            <p>70 вопросов</p>
+                        </div>
+                    </div>
+                    <div class="store__card-desc">
+                        <p>Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
+                    </div>
+                    <input type="button" value="Смотреть" class="button">
+                </article>
+                <!-- Карточка IT-викторина -->
+                <article class="store__card">
+                    <img src="./img/quiz-it.png" alt="quizit!" class="store__card-logo">
+                    <h3 class="store__card-title">IT-викторина</h3>
+                    <div class="store__card-info">
+                        <div class="store__card-info-time">
+                            <img src="./icons/clock.png" alt="clock icon">
+                            <p>90 минут</p>
+                        </div>
+                        <div class="store__card-info-qa">
+                            <img src="./icons/qa.png" alt="qa icon">
+                            <p>70 вопросов</p>
+                        </div>
+                    </div>
+                    <div class="store__card-desc">
+                        <p>Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
+                    </div>
+                    <input type="button" value="Смотреть!" class="button">
+                </article>
+            </div>
+        </section>
+
+        <!-- Секция Прошедшие игры -->
+        <section class="before-games">
+            <div class="before-games__title">
+                <h2>Прошедшие игры</h2>
+            </div>
+            <!-- Слайдер -->
+            <div class="before-games-slider">
+                <article class="before-game-slider__card">
+                    <img src="./img/before-game1.png" alt="before game first image">
+                    <h4>1 января</h4>
+                    <h3>Новогодний квиз</h3>
+                    <p>Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!</p>
+                </article>
+                <article class="before-game-slider__card">
+                    <img src="./img/before-game2.png" alt="before game second image">
+                    <h4>8 марта</h4>
+                    <h3>Весенняя игра</h3>
+                    <p>Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!</p>
+                </article>
+            </div>
+
+            <div class="before-game__pagination">
+                <p>Страница 1 из 7</p>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section class="about-us">
+            <img src="./img/about-us.png" alt="About us image">
+            <div class="about-us-info">
+                <h2>О нас</h2>
+                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                <input type="button" value="Подробнее" class="button">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Футер сайта -->
+        <footer class="footer menu">
+            <img src="./img/logo.png" alt="logo Quiz-box" class="footer__logo">
+            <ul class="footer__nav nav">
+                <li><a href="">Главная</a></li>
+                <li><a href="">Игры</a></li>
+                <li><a href="">Отзывы</a></li>
+            </ul>
+            <ul class="footer__social_media nav">
+                <li><a href="#"><img src="./icons/telegram.png"></a></li>
+                <li><a href="#"><img src="./icons/vk.png"></a></li>
+                <li><a href="#"><img src="./icons/f.png"></a></li>
+                <li><a href="#"><img src="./icons/in.png"></a></li>
+            </ul>
+            <div class="footer__number number">
+                <h4>Бесплатный звонок по России</h4>
+                <h3><a href="tel:88007003030">8 800 700 30 30</a></h3>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
