@@ -5,163 +5,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Интеллектуальный вечер для шумной компании, игры на любой вкус. Event-агентство по устройству развлекательного контента для шумной компании.">
+    <meta name="description"
+        content="Интеллектуальный вечер для дружной компании, игры на любой вкус. Event-агентство по устройству развлекательного контента для шумной компании.">
     <title>Quiz-box | Главная</title>
 </head>
 
 <body>
     <!-- Обвёртка для всего сайта, позволяет сделать его в контейнере -->
     <div class="wrapper">
-        <!-- Шапка сайта -->
-        <header class="header menu">
-            <img src="./img/logo.png" alt="Quiz-box логотип" class="header__logo">
-            <ul class="header__nav nav">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Игры</a></li>
-                <li><a href="#">Отзывы</a></li>
-            </ul>
-            <div class="header__number number">
-                <h4><a href="tel:88007003030">8 800 700 30 30</a></h4>
+        <!-- Шапка -->
+        <header class="header nav">
+            <img src="./img/logo.png" alt="Логотип Quiz-box" class="nav-logo">
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-list__item">Главная</li>
+                    <li class="nav-list__item">Игры</li>
+                    <li class="nav-list__item">Отзывы</li>
+                </ul>
+            </nav>
+            <div class="nav-contact">
+                <h3>8 800 700 30 30</h3>
                 <p>График работы</p>
             </div>
         </header>
-        <!-- Офферная конструкция для привлечения внимания -->
+
+        <!-- Оффер -->
         <section class="offer">
-            <h1>Интеллектуальный вечер для шумной компании</h1>
-            <h4>Игры на любой вкус</h4>
-            <input type="button" value="Подробнее" class="button button_fill">
-        </section>
-        <!-- Блок: Новинки недели -->
-        <section class="store">
-            <div class="store__title">
-                <h2>Новинки недели</h2><img src="" alt="New icon"> <!-- Добавить через ::before иконку-->
-            </div>
-            <!-- Wrapper для карточек для включения Flex-Box -->
-            <div class="store-wrapper">
-                <!-- Карточка Музыкальная игра -->
-                <article class="store__card">
-                    <img src="./img/music-quiz.png" alt="Music Quiz" class="store__card-logo">
-                    <h3 class="store__card-title">Музыкальная игра</h3>
-                    <div class="store__card-info">
-                        <div class="store__card-info-time">
-                            <img src="./icons/clock.png" alt="clock icon">
-                            <p>90 минут</p>
-                        </div>
-                        <div class="store__card-info-qa">
-                            <img src="./icons/qa.png" alt="qa icon">
-                            <p>70 вопросов</p>
-                        </div>
-                    </div>
-                    <div class="store__card-desc">
-                        <p>Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
-                    </div>
-                    <input type="button" value="Смотреть" class="button">
-                </article>
-                <!-- Карточка Назад в 90-е -->
-                <article class="store__card">
-                    <img src="./img/back-to-the-future.png" alt="back to the future" class="store__card-logo">
-                    <h3 class="store__card-title">Назад в 90-е</h3>
-                    <div class="store__card-info">
-                        <div class="store__card-info-time">
-                            <img src="./icons/clock.png" alt="clock icon">
-                            <p>90 минут</p>
-                        </div>
-                        <div class="store__card-info-qa">
-                            <img src="./icons/qa.png" alt="qa icon">
-                            <p>70 вопросов</p>
-                        </div>
-                    </div>
-                    <div class="store__card-desc">
-                        <p>Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
-                    </div>
-                    <input type="button" value="Смотреть" class="button">
-                </article>
-                <!-- Карточка IT-викторина -->
-                <article class="store__card">
-                    <img src="./img/quiz-it.png" alt="quizit!" class="store__card-logo">
-                    <h3 class="store__card-title">IT-викторина</h3>
-                    <div class="store__card-info">
-                        <div class="store__card-info-time">
-                            <img src="./icons/clock.png" alt="clock icon">
-                            <p>90 минут</p>
-                        </div>
-                        <div class="store__card-info-qa">
-                            <img src="./icons/qa.png" alt="qa icon">
-                            <p>70 вопросов</p>
-                        </div>
-                    </div>
-                    <div class="store__card-desc">
-                        <p>Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
-                    </div>
-                    <input type="button" value="Смотреть!" class="button">
-                </article>
-            </div>
+            <h1 class="offer__title">Интеллектуальный вечер для шумной компании</h1>
+            <h3>Игры на любой вкус</h3>
+            <!-- Модификатор ключ:значение theme:fill у кнопки (как на макете) -->
+            <button class="button button_theme_fill">Подробнее</button>
         </section>
 
-        <!-- Секция Прошедшие игры -->
-        <section class="before-games">
-            <div class="before-games__title">
-                <h2>Прошедшие игры</h2>
-            </div>
-            <!-- Слайдер -->
-            <div class="before-games-slider">
-                <article class="before-game-slider__card">
-                    <img src="./img/before-game1.png" alt="before game first image">
-                    <h4>1 января</h4>
-                    <h3>Новогодний квиз</h3>
-                    <p>Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!</p>
-                </article>
-                <article class="before-game-slider__card">
-                    <img src="./img/before-game2.png" alt="before game second image">
-                    <h4>8 марта</h4>
-                    <h3>Весенняя игра</h3>
-                    <p>Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!</p>
-                </article>
-            </div>
+        <!-- Новинки недели NEW -->
+        <article class="newest-game">
+            <h2 class="newest-game__title">Новинки недели<img src="./icons/store-new-badges.png" alt="Новинки недели"></h2>
+            <!-- Создаю отдельный класс Card для возможного в дальшейнем переиспользования, а элемент __card-section -> для отступов -->
+            <section class="newest-game__card-section card">
+                <div class="card-item">
+                    <div class="card-item__img-cover">
+                        <!-- Реализую через свойство background -->
+                    </div>
+                    <div class="card-item__info">
+                        <h3 class="card-item__title">Музыкальная игра</h3>
+                        <!-- Необходим контейнер-wrapper для дальнейшего display: inline-flexbox -->
+                        <div class="card-item__time-qa-container">
+                            <div class="card-item__time">
+                                <img src="./icons/clock.png" alt="Иконка часов">
+                                <h4>90 минут</h4>
+                            </div>
+                            <div class="card-item__qa">
+                                <img src="./icons/qa.png" alt="Иконка вопроса-ответа">
+                                <h4>70 вопросов</h4>
+                            </div>
+                        </div>
+                        <p class="card-item__text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                            рыбные тексты. Рукопись, семь!</p>
+                        <button class="button button_theme_empty">Смотреть</button>
+                    </div>
+                </div>
+                <!-- Вторая карточка -->
+                <div class="card-item">
+                    <div class="card-item__img-cover">
+                        <!-- Реализую через свойство background -->
+                    </div>
+                    <div class="card-item__info">
+                        <h3 class="card-item__title">Назад в 90-е</h3>
+                        <!-- Необходим контейнер-wrapper для дальнейшего display: inline-flexbox -->
+                        <div class="card-item__time-qa-container">
+                            <div class="card-item__time">
+                                <img src="./icons/clock.png" alt="Иконка часов">
+                                <h4>90 минут</h4>
+                            </div>
+                            <div class="card-item__qa">
+                                <img src="./icons/qa.png" alt="Иконка вопроса-ответа">
+                                <h4>70 вопросов</h4>
+                            </div>
+                        </div>
+                        <p class="card-item__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своих, они?</p>
+                        <button class="button button_theme_empty">Смотреть</button>
+                    </div>
+                </div>
+                <!-- Третья карточка -->
+                <div class="card-item">
+                    <div class="card-item__img-cover">
+                        <!-- Реализую через свойство background -->
+                    </div>
+                    <div class="card-item__info">
+                        <h3 class="card-item__title">IT-викторина</h3>
+                        <!-- Необходим контейнер-wrapper для дальнейшего display: inline-flexbox -->
+                        <div class="card-item__time-qa-container">
+                            <div class="card-item__time">
+                                <img src="./icons/clock.png" alt="Иконка часов">
+                                <h4>90 минут</h4>
+                            </div>
+                            <div class="card-item__qa">
+                                <img src="./icons/qa.png" alt="Иконка вопрос-ответ">
+                                <h4>70 вопросов</h4>
+                            </div>
+                        </div>
+                        <p class="card-item__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Большого, сих.</p>
+                        <button class="button button_theme_empty">Смотреть</button>
+                    </div>
+                </div>
+            </section>
+        </article>
 
-            <div class="before-game__pagination">
-                <p>Страница 1 из 7</p>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
+        <!-- Прошедшие игры -->
+        <article class="before-game">
+            <h2 class="before-game__title">Прошедшие игры</h2>
+            <!-- Так же отдельный класс Slider для дальнейшего переиспользования -->
+            <section class="before-game__slider slider">
+                <div class="slider__item">
+                    <!-- Изображение так же реализую через background -->
+                    <h4 class="slider__data">1 января</h4>
+                    <h3 class="slider__title">Новогодний квиз</h3>
+                    <p class="slider__text">Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!</p>
+                </div class="slider__item">
+                <div class="slider__item">
+                    <!-- Изображение так же реализую через background -->
+                    <h4 class="slider__data">8 марта</h4>
+                    <h3 class="slider__title">Весенняя игра</h3>
+                    <p class="slider__text">Успевайте забронировать даты. Пока еще есть места на март. Удачи и всех благ!</p>
+                </div class="slider__item">
+            </section>
+            <!-- Пагинация -->
+            <div class="before-game__pagination pagination">
+                <p class="pagination__info">Страница 1 из 7</p>
+                <ul class="pagination__list">
+                    <li class="pagination__item">1</li>
+                    <li class="pagination__item">2</li>
+                    <li class="pagination__item">3</li>
+                    <li class="pagination__item">4</li>
+                    <li class="pagination__item">5</li>
+                    <li class="pagination__item">6</li>
+                    <li class="pagination__item">7</li>
                 </ul>
             </div>
-        </section>
+        </article>
 
-        <!-- О нас -->
-        <section class="about-us">
-            <img src="./img/about-us.png" alt="About us image">
-            <div class="about-us-info">
-                <h2>О нас</h2>
-                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-                <input type="button" value="Подробнее" class="button">
+        <!-- О НАС -->
+        <section class="about">
+            <div class="about__img">
+                <!-- Создам блок с картинкой, через position: absolute размещу позади, Z-index сделаю меньше чем у элемента content -->
+            </div>
+            <div class="about__content">
+                <h2 class="about__title">О нас</h2>
+                <p class="about__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                <button class="button button_theme_empty">Подробнее</button>
             </div>
         </section>
-
-        <hr>
-
-        <!-- Футер сайта -->
-        <footer class="footer menu">
-            <img src="./img/logo.png" alt="logo Quiz-box" class="footer__logo">
-            <ul class="footer__nav nav">
-                <li><a href="">Главная</a></li>
-                <li><a href="">Игры</a></li>
-                <li><a href="">Отзывы</a></li>
-            </ul>
-            <ul class="footer__social_media nav">
-                <li><a href="#"><img src="./icons/telegram.png"></a></li>
-                <li><a href="#"><img src="./icons/vk.png"></a></li>
-                <li><a href="#"><img src="./icons/f.png"></a></li>
-                <li><a href="#"><img src="./icons/in.png"></a></li>
-            </ul>
-            <div class="footer__number number">
-                <h4>Бесплатный звонок по России</h4>
-                <h3><a href="tel:88007003030">8 800 700 30 30</a></h3>
+        
+        <!-- Подвал сайта -->
+        <footer class="footer nav">
+            <img src="./img/logo.png" alt="Логотип Quiz-box" class="nav-logo">
+            <!-- Тут уже 2 меню. У соц. сетей есть доп. модификатор -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-list__item">Главная</li>
+                    <li class="nav-list__item">Игры</li>
+                    <li class="nav-list__item">Отзывы</li>
+                </ul>
+            </nav>
+            <nav class="nav_menu">
+                <ul class="nav-list">
+                    <!-- у каждого элемента модификатор ключ:значение (чтобы переделать отступы в дальнейшем)-->
+                    <li class="nav-list__item nav-list__item_type_social-media"><img src="./icons/telegram.png" alt="Иконка телеграмма"></li>
+                    <li class="nav-list__item nav-list__item_type_social-media"><img src="./icons/vk.png" alt="Иконка вконтакте"></li>
+                    <li class="nav-list__item nav-list__item_type_social-media"><img src="./icons/f.png" alt="Иконка facebook"></li>
+                    <li class="nav-list__item nav-list__item_type_social-media"><img src="./icons/in.png" alt="Иконка истаграмма"></li>
+                </ul>
+            </nav>
+            <!-- Модификатор ключ:значение заголовка : текст -->
+            <div class="nav-contact">
+                <h5>Бесплатный звонок по Росии</h5>
+                <h3>8 800 700 30 30</h3>
             </div>
         </footer>
 
