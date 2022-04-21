@@ -13,9 +13,9 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="logo">
+            <a class="logo" href="#">
                 <img class="logo__pic" src="/Quiz-Box/img/logo.png" alt="Логотип Quiz Box" >
-            </div>
+            </a>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
@@ -26,28 +26,31 @@
             <address class="contact">
                 <a class="contact__phone" href="tel:88007003030">8 800 700 30 30</a>
                 <div class="contact__work-schedule">График работы</div>
-                <div class="contact__work-schedule contact__work-schedule--hidden">пн-вс: 09:00 - 20:00<br>Обед: 14:00-14:30</div>
             </address>
         </header>
-
-        <main>
+        <!-- ТО ЖЕ КЛАСС для MAIN -->
+        <main class="main-content">
             <section class="offer">
                 <h1 class="offer__title">Интеллектуальный вечер для шумной компании</h1>
-                <div class="offer__slogan">Игры на любой вкус</div>
+                <div class="offer__subtitle">Игры на любой вкус</div>
                 <a class="button button--main" href="#" >Подробнее</a>
             </section>
 
+            <!-- Изменить названиге класса на offer -->
             <section class="newest-game">
                 <div class="newest-game__title">
                     <h2 class="newest-game__title-text">Новинки недели</h2>
+                    <!-- Добавить img через модификатор -->
                     <img class="newest-game__title-icon" src="/Quiz-Box/icons/store-new-badges.png" alt="">
                 </div>
-                
+                <!-- offer-list -->
                 <ul class="event-card">
                     <li class="event-card__item">
                         <img class="event-card__thumb" src="/Quiz-Box/img/music-quiz.png" alt="Ковер музыкальная игра">
+                        <!-- event-content -->
                         <div class="event-container">
                             <h3 class="event-card__title">Музыкальная игра</h3>
+                            <!-- Сделать списком -->
                             <div class="event-card__meta">
                                 <div class="event-card__time">
                                     <img class="event-card__time-icon" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
@@ -102,7 +105,7 @@
             </section>
 
             <section class="before-game">
-                <div class="before-game__title">
+                <div class="title">
                     <h2 class="before-game__title-text">Прошедшие игры</h2>
                 </div>
 
@@ -119,9 +122,11 @@
                             <div class="slide__desc">Успевайте забронировать даты. Пока еще есть места на март. Удачи и всех благ!</div>
                         </li>
                     </ul>
+                    <!-- Это пагинатор!!! -->
                     <div class="slider__container">
                         <div class="slider__display">Страница 1 из 7</div>
                         <ul class="slider__list">
+                            <!-- убрать current -->
                             <li class="slider__item slider__item--current">1</li>
                             <li class="slider__item">2</li>
                             <li class="slider__item">3</li>
@@ -137,6 +142,7 @@
             <section class="about">
                 <img class="about__img" src="/Quiz-Box/img/about-us.png" alt="О нас" >
                 <div class="about__content">
+                    <!-- Title - Переиспользованный!! С Модификатором!!!rj -->
                     <h2 class="about__title">О нас</h2>
                     <p class="about__text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Запятой города, наш эта вершину свой запятых реторический напоивший выйти?</p>
                     <a class="button" href="#">Подробнее</a>
@@ -147,22 +153,23 @@
 
         <footer class="footer">
             <hr class="footer__hr">
-            <div class="logo">
+            <a class="logo" src="#">
                 <img class="logo__pic" src="/Quiz-Box/img/logo.png" alt="Логотип Quiz Box">
-            </div>
+            </a>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Игры</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
                 </ul>
-                <ul class="nav__list">
-                    <li class="nav__item nav__item--social"><a class="nav__link" href="#"><img class="nav__img" src="/Quiz-Box/icons/telegram.png" alt="Иконка телеграмма"></a></li>
-                    <li class="nav__item nav__item--social"><a class="nav__link" href="#"><img class="nav__img" src="/Quiz-Box/icons/vk.png" alt="Иконка вконтакте"></a></li>
-                    <li class="nav__item nav__item--social"><a class="nav__link" href="#"><img class="nav__img" src="/Quiz-Box/icons/f.png" alt="Иконка facebook"></a></li>
-                    <li class="nav__item nav__item--social"><a class="nav__link" href="#"><img class="nav__img" src="/Quiz-Box/icons/in.png" alt="Иконка instagramm"></a></li>
-                </ul>
             </nav>
+            <!-- Социальные сети - не навигация! -->
+            <ul class="nav__list">
+                <li class="nav__item nav__item--social"><a class="nav__link" href="#"><img class="nav__img" src="/Quiz-Box/icons/telegram.png" alt="Иконка телеграмма"></a></li>
+                <li class="nav__item nav__item--social"><a class="nav__link" href="#"><img class="nav__img" src="/Quiz-Box/icons/vk.png" alt="Иконка вконтакте"></a></li>
+                <li class="nav__item nav__item--social"><a class="nav__link" href="#"><img class="nav__img" src="/Quiz-Box/icons/f.png" alt="Иконка facebook"></a></li>
+                <li class="nav__item nav__item--social"><a class="nav__link" href="#"><img class="nav__img" src="/Quiz-Box/icons/in.png" alt="Иконка instagramm"></a></li>
+            </ul>
             <address class="contact">
                 <div class="contact__info">Бесплатный звонок по России</div>
                 <a class="contact__phone" href="tel:88007003030">8 800 700 30 30</a>
