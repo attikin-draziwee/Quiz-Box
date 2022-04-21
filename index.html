@@ -11,7 +11,209 @@
 </head>
 
 <body>
-    
+
+    <div class="wrapper">
+        <!-- Для flexbox -->
+        <div class="wrapper__content">
+
+            <header class="header">
+                <!-- Шапка на всю ширину -->
+                <div class="header__container container">
+                    <a class="logo" href="#">
+                        <img class="logo__pic" src="/Quiz-Box/img/" alt="Логотип Quiz-box">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Игры</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="contact">
+                        <a class="contact__phone" href="tel:88007003030" >8 800 700 30 30</a>
+                        <div class="contact__schedule">График работы</div>
+                    </address>
+                </div>
+            </header>
+
+            <main class="main-content container">
+                <section class="hello hello__container">
+                    <h1 class="hello__title">Интеллектуальный вечер для шумной компании</h1>
+                    <div class="hello__subtitle">Игры на любой вкус</div>
+                    <a href="#" class="button">Подробнее</a>
+                </section>
+
+                <section class="newest newest__container">
+                    <!-- Реализация иконки через псевдоэлемент ::before -->
+                    <h2 class="title title--icon">Новинки недели</h2>
+                    <ul class="newest__list">
+                        <li class="newest__item">
+                            <div class="newest__thumb">
+                                <!-- Реализация фото через background-image -->
+                            </div>
+                            <div class="newest__content">
+                                <h3 class="subtitle">Музыкальная игра</h3>
+                                <ul class="newest__metas">
+                                    <li class="newest__meta">
+                                        <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
+                                        <div class="description">90 минут</div>
+                                    </li>
+                                    <li class="newest__meta">
+                                        <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка вопрос-ответ">
+                                        <div class="description">70 вопросов</div>
+                                    </li>
+                                </ul>
+                                <p class="newest__desc">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
+                                <a class="button button--empty" href="#">Смотреть</a>
+                            </div>
+                        </li>
+                        <li class="newest__item">
+                            <div class="newest__thumb">
+                                <!-- Реализация фото через background-image -->
+                            </div>
+                            <div class="newest__content">
+                                <h3 class="subtitle">Назад в 90-е</h3>
+                                <ul class="newest__metas">
+                                    <li class="newest__meta">
+                                        <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
+                                        <div class="description">90 минут</div>
+                                    </li>
+                                    <li class="newest__meta">
+                                        <img class="newest__meta-img" src="/Quiz-Box/icons/qa.png" alt="Иконка вопрос-ответ">
+                                        <div class="description">70 вопросов</div>
+                                    </li>
+                                </ul>
+                                <p class="newest__desc">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
+                                <a class="button button--empty" href="#">Смотреть</a>
+                            </div>
+                        </li>
+                        <li class="newest__item">
+                            <div class="newest__thumb">
+                                <!-- Реализация фото через background-image -->
+                            </div>
+                            <div class="newest__content">
+                                <h3 class="subtitle">IT-викторина</h3>
+                                <ul class="newest__metas">
+                                    <li class="newest__meta">
+                                        <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
+                                        <div class="description">90 минут</div>
+                                    </li>
+                                    <li class="newest__meta">
+                                        <img class="newest__meta-img" src="/Quiz-Box/icons/qa.png" alt="Иконка вопрос-ответ">
+                                        <div class="description">70 вопросов</div>
+                                    </li>
+                                </ul>
+                                <p class="newest__desc">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
+                                <a class="button button--empty" href="#">Смотреть</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="before before__container">
+                    <h2 class="title">Прошедшие игры</h2>
+                    <ul class="before__list">
+                        <div class="before__item">
+                            <div class="before__content">
+                                <div class="before__meta">1 января</div>
+                                <div class="subtitle subtitle--white">Новогодний квиз</div>
+                                <p class="description">Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!</p>
+                            </div>
+                        </div>
+                        <div class="before__item">
+                            <div class="before__content">
+                                <div class="before__meta">8 марта</div>
+                                <div class="subtitle subtitle--white">Весенняя игра</div>
+                                <p class="description">Успевайте забронировать даты. Пока еще есть места на март. Удачи и всех благ!</p>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="paginator">
+                        <div class="paginator__display">Страница 1 из 7</div>
+                        <ul class="paginator__list">
+                            <li class="paginator__item">1</li>
+                            <li class="paginator__item">2</li>
+                            <li class="paginator__item">3</li>
+                            <li class="paginator__item">4</li>
+                            <li class="paginator__item">5</li>
+                            <li class="paginator__item">6</li>
+                            <li class="paginator__item">7</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="about about__container">
+                    <div class="about__img">
+                        <!-- Реализация фото через background-image -->
+                    </div>
+                    <div class="about__content">
+                        <h2 class="title">О нас</h2>
+                        <p class="description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                        <div class="button button--empty">Подробнее</div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <!-- Футер на всю ширину -->
+                <div class="footer__container container">
+                    <a class="logo" href="#">
+                        <img class="logo__pic" src="/Quiz-Box/img/" alt="Логотип Quiz-box">
+                    </a>
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Игры</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--social">
+                            <a class="menu__link" href="#">
+                                <img src="/Quiz-Box/icons/telegram.png" alt="Иконка телеграмма" class="menu__img">
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--social">
+                            <a class="menu__link" href="#">
+                                <img src="/Quiz-Box/icons/vk.png" alt="Иконка вконтакте" class="menu__img">
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--social">
+                            <a class="menu__link" href="#">
+                                <img src="/Quiz-Box/icons/f.png" alt="Иконка facebook" class="menu__img">
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--social">
+                            <a class="menu__link" href="#">
+                                <img src="/Quiz-Box/icons/in.png" alt="Иконка instagramm" class="menu__img">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <address class="contact">
+                        <div class="contact__info">Бесплатный звонок по России</div>
+                        <a class="contact__phone" href="tel:88007003030" >8 800 700 30 30</a>
+                    </address>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
 </body>
 
 </html>
