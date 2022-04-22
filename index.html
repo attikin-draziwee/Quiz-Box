@@ -13,11 +13,9 @@
 <body>
 
     <div class="wrapper">
-        <!-- Для flexbox -->
         <div class="wrapper__content">
 
             <header class="header">
-                <!-- Шапка на всю ширину -->
                 <div class="container header__container">
                     <a class="logo" href="#">
                         <img class="logo__pic" src="/Quiz-Box/img/logo.png" alt="Логотип Quiz-box">
@@ -50,15 +48,12 @@
                 </section>
 
                 <section class="newest newest__container">
-                    <!-- Реализация иконки через псевдоэлемент ::before -->
                     <h2 class="title title--icon">Новинки недели</h2>
                     <ul class="newest__list">
                         <li class="newest__item">
-                            <div class="newest__thumb">
-                                <!-- Реализация фото через background-image -->
-                            </div>
+                            <img class="newest__pic" src="/Quiz-Box/img/music-quiz.png" alt="Миниатюра музыкальная игра">
                             <div class="newest__content">
-                                <h3 class="subtitle">Музыкальная игра</h3>
+                                <h3 class="newest__subtitle">Музыкальная игра</h3>
                                 <ul class="newest__metas">
                                     <li class="newest__meta">
                                         <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
@@ -74,11 +69,9 @@
                             </div>
                         </li>
                         <li class="newest__item">
-                            <div class="newest__thumb">
-                                <!-- Реализация фото через background-image -->
-                            </div>
+                            <img class="newest__pic" src="/Quiz-Box/img/back-to-the-future.png" alt="Миниатюра назад в 90-е">
                             <div class="newest__content">
-                                <h3 class="subtitle">Назад в 90-е</h3>
+                                <h3 class="newest__subtitle">Назад в 90-е</h3>
                                 <ul class="newest__metas">
                                     <li class="newest__meta">
                                         <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
@@ -94,11 +87,9 @@
                             </div>
                         </li>
                         <li class="newest__item">
-                            <div class="newest__thumb">
-                                <!-- Реализация фото через background-image -->
-                            </div>
+                            <img class="newest__pic" src="/Quiz-Box/img/quiz-it.png" alt="Миниатюра">
                             <div class="newest__content">
-                                <h3 class="subtitle">IT-викторина</h3>
+                                <h3 class="newest__subtitle">IT-викторина</h3>
                                 <ul class="newest__metas">
                                     <li class="newest__meta">
                                         <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
@@ -116,23 +107,23 @@
                     </ul>
                 </section>
 
-                <section class="before before__container">
+                <section class="completed completed__container">
                     <h2 class="title">Прошедшие игры</h2>
-                    <ul class="before__list">
-                        <div class="before__item">
-                            <div class="before__content">
-                                <div class="before__meta">1 января</div>
-                                <div class="subtitle subtitle--white">Новогодний квиз</div>
-                                <p class="description">Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!</p>
+                    <ul class="completed__list">
+                        <li class="completed__item">
+                            <div class="completed__content">
+                                <div class="completed__meta">1 января</div>
+                                <div class="completed__subtitle">Новогодний квиз</div>
+                                <p class="completed__desc">Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!</p>
                             </div>
-                        </div>
-                        <div class="before__item">
-                            <div class="before__content">
-                                <div class="before__meta">8 марта</div>
-                                <div class="subtitle subtitle--white">Весенняя игра</div>
-                                <p class="description">Успевайте забронировать даты. Пока еще есть места на март. Удачи и всех благ!</p>
+                        </li>
+                        <li class="completed__item">
+                            <div class="completed__content">
+                                <div class="completed__meta">8 марта</div>
+                                <div class="completed__subtitle">Весенняя игра</div>
+                                <p class="completed__desc">Успевайте забронировать даты. Пока еще есть места на март. Удачи и всех благ!</p>
                             </div>
-                        </div>
+                        </li>
                     </ul>
                     <div class="paginator">
                         <div class="paginator__display">Страница 1 из 7</div>
@@ -149,19 +140,16 @@
                 </section>
 
                 <section class="about about__container">
-                    <div class="about__img">
-                        <!-- Реализация фото через background-image -->
-                    </div>
+                    <img class="about__pic" src="/Quiz-Box/img/about-us.png" alt="Фон о нас">
                     <div class="about__content">
-                        <h2 class="title">О нас</h2>
-                        <p class="description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                        <h2 class="about__title">О нас</h2>
+                        <p class="about__desc">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
                         <div class="button button--empty">Подробнее</div>
                     </div>
                 </section>
             </main>
 
             <footer class="footer">
-                <!-- Футер на всю ширину -->
                 <div class="container footer__container">
                     <a class="logo" href="#">
                         <img class="logo__pic" src="/Quiz-Box/img/logo.png" alt="Логотип Quiz-box">
@@ -181,26 +169,26 @@
                         </ul>
                     </nav>
 
-                    <div class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item menu__item--social">
-                                <a class="menu__link" href="#">
-                                    <img src="/Quiz-Box/icons/telegram.png" alt="Иконка телеграмма" class="menu__img">
+                    <div class="social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__icon" src="/Quiz-Box/icons/telegram.png" alt="Иконка телеграмма">
                                 </a>
                             </li>
-                            <li class="menu__item menu__item--social">
-                                <a class="menu__link" href="#">
-                                    <img src="/Quiz-Box/icons/vk.png" alt="Иконка вконтакте" class="menu__img">
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__icon" src="/Quiz-Box/icons/vk.png" alt="Иконка вконтакте">
                                 </a>
                             </li>
-                            <li class="menu__item menu__item--social">
-                                <a class="menu__link" href="#">
-                                    <img src="/Quiz-Box/icons/f.png" alt="Иконка facebook" class="menu__img">
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__icon" src="/Quiz-Box/icons/f.png" alt="Иконка facebook">
                                 </a>
                             </li>
-                            <li class="menu__item menu__item--social">
-                                <a class="menu__link" href="#">
-                                    <img src="/Quiz-Box/icons/in.png" alt="Иконка instagramm" class="menu__img">
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__icon" src="/Quiz-Box/icons/in.png" alt="Иконка instagramm">
                                 </a>
                             </li>
                         </ul>
