@@ -19,13 +19,14 @@ mixin new-card(props)
         ul.new__metas
             each meta in props.meta
                 li.new__meta-item
+                    //- Реализовать meta-img через псевдоэлемент!
                     img.new__meta-img(src=meta[0] alt=meta[1])
                     .new__meta-text #{meta[2]}
         .new__desc #{props.text}
         a.button(href=props.button[1]) #{props.button[0]}
 
 mixin completed-card(props)
-    li.completed__item(id=props.cardId): .completed__item-container
+    li.completed__item(class="completed__item--"+props.cardId): .completed__item-container
         .completed__meta #{props.meta}
         .completed__title #{props.title}
         .completed__desc #{props.desc}
