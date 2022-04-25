@@ -8,6 +8,7 @@
     <meta name="description"
         content="Интеллектуальный вечер для дружной компании, игры на любой вкус. Event-агентство по устройству развлекательного контента для шумной компании.">
     <title>Quiz-box | Главная</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -18,9 +19,9 @@
             <header class="header">
                 <div class="container header__container">
                     <a class="logo" href="#">
-                        <img class="logo__pic" src="/Quiz-Box/img/logo.png" alt="Логотип Quiz-box">
+                        <img class="logo__pic" src="./img/logo.png" alt="Логотип Quiz-box">
                     </a>
-                    <nav class="menu">
+                    <nav class="menu header__menu">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a class="menu__link" href="#">Главная</a>
@@ -51,17 +52,15 @@
                     <h2 class="title title--icon">Новинки недели</h2>
                     <ul class="newest__list">
                         <li class="newest__item">
-                            <img class="newest__pic" src="/Quiz-Box/img/music-quiz.png" alt="Миниатюра музыкальная игра">
+                            <img class="newest__pic" src="./img/music-quiz.png" alt="Миниатюра музыкальная игра">
                             <div class="newest__content">
                                 <h3 class="newest__subtitle">Музыкальная игра</h3>
                                 <ul class="newest__metas">
                                     <li class="newest__meta">
-                                        <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
-                                        <div class="newest__meta-text">90 минут</div>
+                                        <div class="newest__meta-text newest__meta-text--clock">90 минут</div>
                                     </li>
                                     <li class="newest__meta">
-                                        <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка вопрос-ответ">
-                                        <div class="newest__meta-text">70 вопросов</div>
+                                        <div class="newest__meta-text newest__meta-text--qa">70 вопросов</div>
                                     </li>
                                 </ul>
                                 <p class="newest__desc">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
@@ -69,17 +68,15 @@
                             </div>
                         </li>
                         <li class="newest__item">
-                            <img class="newest__pic" src="/Quiz-Box/img/back-to-the-future.png" alt="Миниатюра назад в 90-е">
+                            <img class="newest__pic" src="./img/back-to-the-future.png" alt="Миниатюра назад в 90-е">
                             <div class="newest__content">
                                 <h3 class="newest__subtitle">Назад в 90-е</h3>
                                 <ul class="newest__metas">
                                     <li class="newest__meta">
-                                        <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
-                                        <div class="newest__meta-text">90 минут</div>
+                                        <div class="newest__meta-text newest__meta-text--clock">90 минут</div>
                                     </li>
                                     <li class="newest__meta">
-                                        <img class="newest__meta-img" src="/Quiz-Box/icons/qa.png" alt="Иконка вопрос-ответ">
-                                        <div class="newest__meta-text">70 вопросов</div>
+                                        <div class="newest__meta-text newest__meta-text--qa">70 вопросов</div>
                                     </li>
                                 </ul>
                                 <p class="newest__desc">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
@@ -87,17 +84,15 @@
                             </div>
                         </li>
                         <li class="newest__item">
-                            <img class="newest__pic" src="/Quiz-Box/img/quiz-it.png" alt="Миниатюра">
+                            <img class="newest__pic" src="./img/quiz-it.png" alt="Миниатюра">
                             <div class="newest__content">
                                 <h3 class="newest__subtitle">IT-викторина</h3>
                                 <ul class="newest__metas">
                                     <li class="newest__meta">
-                                        <img class="newest__meta-img" src="/Quiz-Box/icons/clock.png" alt="Иконка часов">
-                                        <div class="newest__meta-text">90 минут</div>
+                                        <div class="newest__meta-text newest__meta-text--clock">90 минут</div>
                                     </li>
                                     <li class="newest__meta">
-                                        <img class="newest__meta-img" src="/Quiz-Box/icons/qa.png" alt="Иконка вопрос-ответ">
-                                        <div class="newest__meta-text">70 вопросов</div>
+                                        <div class="newest__meta-text newest__meta-text--qa">70 вопросов</div>
                                     </li>
                                 </ul>
                                 <p class="newest__desc">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
@@ -126,7 +121,7 @@
                         </li>
                     </ul>
                     <div class="paginator">
-                        <div class="paginator__display">Страница 1 из 7</div>
+                        <span class="paginator__display">Страница 1 из 7</span>
                         <ul class="paginator__list">
                             <li class="paginator__item">1</li>
                             <li class="paginator__item">2</li>
@@ -140,22 +135,25 @@
                 </section>
 
                 <section class="about about__container">
-                    <img class="about__pic" src="/Quiz-Box/img/about-us.png" alt="Фон о нас">
+                    <img class="about__pic" src="./img/about-us.png" alt="Фон о нас">
                     <div class="about__content">
                         <h2 class="about__title">О нас</h2>
                         <p class="about__desc">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-                        <div class="button button--empty">Подробнее</div>
+                        <a class="button button--purple" href="#">Подробнее</a>
                     </div>
                 </section>
             </main>
 
             <footer class="footer">
                 <div class="container footer__container">
+
+                    <div class="footer__hr"></div>
+                    
                     <a class="logo" href="#">
-                        <img class="logo__pic" src="/Quiz-Box/img/logo.png" alt="Логотип Quiz-box">
+                        <img class="logo__pic" src="./img/logo.png" alt="Логотип Quiz-box">
                     </a>
 
-                    <nav class="menu">
+                    <nav class="menu footer__menu">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a class="menu__link" href="#">Главная</a>
@@ -173,22 +171,22 @@
                         <ul class="social__list">
                             <li class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__icon" src="/Quiz-Box/icons/telegram.png" alt="Иконка телеграмма">
+                                    <img class="social__icon" src="./icons/telegram.png" alt="Иконка телеграмма">
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__icon" src="/Quiz-Box/icons/vk.png" alt="Иконка вконтакте">
+                                    <img class="social__icon" src="./icons/vk.png" alt="Иконка вконтакте">
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__icon" src="/Quiz-Box/icons/f.png" alt="Иконка facebook">
+                                    <img class="social__icon" src="./icons/f.png" alt="Иконка facebook">
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__icon" src="/Quiz-Box/icons/in.png" alt="Иконка instagramm">
+                                    <img class="social__icon" src="./icons/in.png" alt="Иконка instagramm">
                                 </a>
                             </li>
                         </ul>
