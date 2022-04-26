@@ -1,7 +1,7 @@
 @import url('./normalize.css');
 @import url('./reset.css');
 
-@import url('./fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 :root {
     --text-color: #fff;
@@ -114,12 +114,12 @@ body {
 .header__menu {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 20.7%;
+    margin: 0 20%;
 }
 .footer__menu {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 112px;
+    margin: 0 111px;
 }
 
 .menu__list {
