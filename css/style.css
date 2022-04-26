@@ -21,7 +21,7 @@ body {
     background-color: #17191C;
     color: var(--text-color);
 }
-.wrapper {
+.wrapper__content {
     background: url('../img/background-1.png') no-repeat, url('../img/background-2.png') no-repeat;
     background-position: 0 0, 0 1762px;
 }
