@@ -1,18 +1,14 @@
-include interactive.pug
+include menu.pug
 header.header: .container.header__container
-    block menu
-        +menu([
-            {
-                'element':'logo',
-                'img': ['./img/logo.png','Логотип Quiz-Box'],
-                'link': '#'
-            },
-            {
-                'element':'nav',
-                'link': [['Главная','#'],['Игры','#'],['Отзывы','#']]
-            }
-        ])
-        address.contact
-            a.contact__phone(href="tel:88007003030") 8 800 700 30 30
-            .contact__schedule График работы
-
+    +navigation([
+        {
+            'type': 'logo',
+            'values' : ['#','./img/logo.png']
+        },
+        {
+            'type': 'menu',
+            'values' : [['Главная','#'],['Игры','#'],['Отзывы','#']]
+        }])
+    address.contact
+        a.contact__number(href="tel:88007003030") 8 800 700 30 30
+        .contact__dropdown График работы:

@@ -1,29 +1,18 @@
-include interactive
+include menu.pug
 footer.footer: .container.footer__container
-    +menu(
-        [{
-            'element':'logo',
-            'img': ['./img/logo.png','Логотип Quiz-Box'],
-            'link': '#'
-        },
-        {
-            'element':'nav',
-            'link': 
-            [
-                ['Главная','#'],['Игры','#'],['Отзывы','#']
-            ]
-        },
-        {
-            'element':'social',
-            'link':
-            [
-                ['./icons/telegram.png','Иконка телеграмма','#'],
-                ['./icons/vk.png','Иконка вконтакте','#'],
-                ['./icons/f.png','Иконка facebook','#'],
-                ['./icons/in.png','Иконка instagram','#']
-            ]
-        }]
-    )
+    +navigation([
+            {
+                'type': 'logo',
+                'values' : ['#','./img/logo.png']
+            },
+            {
+                'type': 'menu',
+                'values' : [['Главная','#'],['Игры','#'],['Отзывы','#']]
+            },
+            {
+                'type': 'social',
+                'values' : [['#','../icons/telegram.png','Иконка телеграма'],['#','../icons/vk.png','Иконка вконтакте'],['#','../icons/f.png','Иконка facebook'],['#','../icons/in.png','Иконка instagramm']]
+            }])
     address.contact
         .contact__info Бесплатный звонок по России
-        a.contact__phone(href="tel:88007003030") 8 800 700 30 30
+        a.contact__number(href="tel:88007003030") 8 800 700 30 30

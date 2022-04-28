@@ -1,0 +1,48 @@
+.newest
+    margin-bottom: 140px
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        min-height: 545px
+    &__list
+        color: #000
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+    &__item
+        max-width: 362px
+        background-color: #fff
+        border-radius: 5px
+    &__content
+        padding: 34px 34px 26px 22px
+    &__title
+        font-size: 24px
+        font-weight: bold
+        margin-bottom: 23px
+    &__metas
+        width: 100%
+        margin-bottom: 17px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__meta
+        display: inline-block
+        vertical-align: middle
+        font-size: 16px
+        color: #666
+        &--time::before
+            display: inline-block
+            vertical-align: middle
+            content: url('../icons/main/clock.png')
+            margin-right: 10px
+        &--qa::before
+            display: inline-block
+            vertical-align: middle
+            content: url('../icons/main/qa.png')
+            margin-right: 10px
+    &__desc
+        font-size: 14px
+        line-height: 1.5em
+        margin-bottom: 22px

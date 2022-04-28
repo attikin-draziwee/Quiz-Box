@@ -1,83 +1,17 @@
 extends ./pug/pattern.pug
 
-append config
-    - title = 'Интеллектуальный вечер для шумной компании'
+append links
+    link(rel="stylesheet" href="./style/main.css")
 
+append before-main
+    -title = 'Интеллектуальный вечер для шумной компании'
+    section.hero: .container.hero__container
+        include ./pug/header.pug
+        .hero__content
+            h1.hero__title #{title}
+            h4.hero__subtitle Игры на любой вкус
+            a.button(href="#") Подробнее
 append content
-    include ./pug/header.pug
-    main.main-content.container
-
-        section.offer: .container.offer__container
-            h1.offer__title #{title}
-            .offer__subtitle Игры на любой вкус
-            a.button(href='#') Подробнее
-
-        section.news: .container.news__container
-            h2.title.title--new Новинки недели
-            ul.news__list
-                +new-card(
-                    {
-                        'title': 'Музыкальная игра',
-                        'img' : ['./img/music-quiz.png','Миниатюра музыкальная игра'],
-                        'meta' : [['./icons/clock.png','Иконка часов','90 минут'],['./icons/qa.png','Иконка вопрос-ответ','70 вопросов']],
-                        'text' : 'Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.',
-                        'button' : ['Смотреть','#']
-                    }
-                )
-                +new-card(
-                    {
-                        'title': 'Назад в 90-е',
-                        'img' : ['./img/back-to-the-future.png','Миниатюра назад в 90-е'],
-                        'meta' : [['./icons/clock.png','Иконка часов','90 минут'],['./icons/qa.png','Иконка вопрос-ответ','70 вопросов']],
-                        'text' : 'Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.',
-                        'button' : ['Смотреть','#']
-                    }
-                )
-                +new-card(
-                    {
-                        'title': 'IT-викторина',
-                        'img' : ['./img/quiz-it.png','Миниатюра IT-викторина'],
-                        'meta' : [['./icons/clock.png','Иконка часов','90 минут'],['./icons/qa.png','Иконка вопрос-ответ','70 вопросов']],
-                        'text' : 'Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.',
-                        'button' : ['Смотреть','#']
-                    }
-                )
-
-        section.completed: .container.completed__container
-            h2.title Прошедшие игры
-            ul.completed__list
-                +completed-card(
-                    {
-                        'title' : 'Новогодний квиз',
-                        'desc' : 'Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!',
-                        'meta' : '1 января',
-                        'cardId' : 'one'
-                    }
-                )
-                +completed-card(
-                    {
-                        'title' : 'Весенняя игра',
-                        'desc' : 'Успевайте забронировать даты. Пока еще есть места на март. Удачи и всех благ!',
-                        'meta' : '8 марта',
-                        'cardId' : 'two'
-                    }
-                )
-            .pagination
-                .pagination__display Страница 1 из 7
-                ul.pagination__list
-                    li.pagination__item 1
-                    li.pagination__item 2
-                    li.pagination__item 3
-                    li.pagination__item 4
-                    li.pagination__item 5
-                    li.pagination__item 6
-                    li.pagination__item 7
-        
-        section.about
-            .container.about__container
-                .about__content
-                    h2.title О нас
-                    .about__text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-                    a.button(href='#') Подробнее
-
-    include ./pug/footer.pug
+    include ./pug/newest.pug
+    include ./pug/completed.pug
+    include ./pug/about-us.pug

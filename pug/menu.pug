@@ -1,0 +1,18 @@
+mixin navigation(items)
+    each props in items
+        case props.type
+            when 'logo'
+                a.logo(href=props.values[0]): img.logo__pic(src=props.values[1] alt='Логотип')
+            when 'menu'
+                nav.menu: ul.menu__list
+                    each menu__items in props.values
+                        li.menu__item: a.menu__link(href=menu__items[1]) #{menu__items[0]}
+            when 'social'
+                .social: ul.social__list
+                    each social__item in props.values
+                        li.social__item: a.social__link(href=social__item[0]): img.social__icon(src=social__item[1] alt=social__item[2])
+
+//-  = [{'type':'logo','values':['#','#']},
+        {'type':'menu', 'values': [['Главная','#'],['Обо мне','#'],['Контакты','#']]},
+        {'type':'social', 'values' : [['./img','#','TikTok'],[],[],[]]},
+        {'type': 'contact', 'values': }]

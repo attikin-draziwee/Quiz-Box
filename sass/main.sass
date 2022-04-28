@@ -1,0 +1,32 @@
+@import 'base.sass'
+@import 'header.sass'
+@import 'newest.sass'
+@import 'completed.sass'
+@import 'about-us.sass'
+@import 'footer.sass'
+
+body
+    background-color: #17191c
+
+.wrapper
+    position: relative
+    background: url(../img/main/background-first.png) no-repeat, url('../img/main/background-second.png') no-repeat
+    background-position: 0 0, 0 90%
+
+.hero
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 578px
+        margin-bottom: 196px
+    &__content
+        max-width: 60%
+    &__title
+        font-size: 60px
+        font-weight: bold
+        line-height: 1.1em
+        margin-bottom: 21px
+    &__subtitle
+        font-size: 21px
+        margin-bottom: 76px

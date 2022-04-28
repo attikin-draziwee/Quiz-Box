@@ -1,14 +1,19 @@
 include config.pug
+
 doctype html
-html(lang="en")
+html(lang="ru")
     head
-        block meta
+        block metas
             meta(charset="UTF-8")
             meta(http-equiv="X-UA-Compatible", content="IE=edge")
             meta(name="viewport", content="width=device-width, initial-scale=1.0")
-            meta(name="keywords" content="игры для компании, веселая вечеринка, встреча старых друзей.")
-            meta(name="description", content="Quiz-Box это дружный, ламповый коллектив, способный помочь вам вечер в кругу близких людей за невероятной, незабываемой игрой!")
         title #{title}
+        block links
+            
     body
-        .wrapper: .wrapper__container
-            block content
+        .wrapper
+            .wrapper__content.wrapper__content--main
+                block before-main
+                main.main-content.container
+                    block content
+                include footer.pug

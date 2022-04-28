@@ -1,0 +1,39 @@
+.about
+    position: relative
+    z-index: 5
+    &__container
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        margin-bottom: 53px
+    &__box
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        width: 785px
+        min-height: 455px
+        padding-left: 81px
+        border-radius: 5px
+        background: linear-gradient(71.43deg, #8F00FF 0%, #148CFF 100%), #212121
+        &::before
+            position: absolute
+            z-index: -1
+            content: ''
+            width: 489px
+            height: 505px
+            left: -353px
+            bottom: 47px
+            border-radius: 5px
+            background: url('../img/main/about-us.png')
+
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        width: 502px
+        min-height: 319px
+    &__text
+        line-height: 1.7em
