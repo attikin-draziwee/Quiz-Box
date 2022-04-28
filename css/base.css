@@ -35,19 +35,23 @@ h6 {
     margin: 0px;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     margin: 0;
     padding: 0;
     display: inline-block;
-    list-style: none;
 }
-li {
+ul li {
+    list-style: none;
     display: inline-block;
 }
 
 a {
 	color: inherit;
-	cursor: pointer;
 	text-decoration: none;
 }
 
@@ -70,6 +74,9 @@ button {
 .menu__link:hover {
     color: var(--accent-color);
 }
+.contact {
+    text-align: right;
+}
 .contact__phone {
     font-size: 26px;
 }
@@ -78,7 +85,6 @@ button {
     font-size: 13px;
     text-decoration: underline;
     cursor: pointer;
-    text-align: right;
 }
 .contact__schedule:hover {
     color: inherit;
@@ -87,7 +93,6 @@ button {
     font-size: 11px;
     line-height: 1.8em;
     color: rgba(154,154,154,1);
-    text-align: right;
     margin-bottom: 6.5px;
 }
 .social__item {
@@ -103,6 +108,7 @@ button {
     opacity: 1;
 }
 .button {
+    display: inline-block;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -157,11 +163,10 @@ button {
     display: inline-block;
     font-size: 16px;
     line-height: 1.3em;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 .paginator__item {
     cursor: pointer;
-    margin-right: 2px;
     padding: 5px 11px;
     border-radius: 100%;
 }

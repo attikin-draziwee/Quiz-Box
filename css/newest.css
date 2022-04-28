@@ -8,6 +8,7 @@
     border-radius: 5px;
     background-color: #fff;
     display: inline-block;
+    vertical-align: top;
     max-width: 362px;
     margin-right: 23px;
 }
@@ -21,7 +22,7 @@
     border-radius: 5px;
     color: #000;
     background-color: #fff;
-    padding: 33px 34px 44px 22px;
+    padding: 33px 34px 26px 22px;
 }
 .newest__subtitle {
     font-size: 24px;
@@ -52,5 +53,5 @@
 .newest__desc {
     font-size: 14px;
     line-height: 1.5em;
-    margin-bottom: calc(25px + 14px);
+    margin-bottom: 17px;
 }

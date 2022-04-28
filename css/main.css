@@ -1,6 +1,6 @@
 @import url('base.css');
 @import url('header.css');
-@import url('hello.css');
+@import url('hero.css');
 @import url('newest.css');
 @import url('completed.css');
 @import url('about-us.css');
@@ -9,7 +9,7 @@
 body {
     background-color: #17191c;
 }
-.wrapper__content--main {
+.wrapper__content {
     background: url('../img/background-1.png') no-repeat, url('../img/background-2.png') no-repeat;
     background-position: 0 0, 0 1762px;
     color: #FFF;
