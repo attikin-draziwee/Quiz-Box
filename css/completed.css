@@ -1,0 +1,42 @@
+.completed__container {
+    margin-bottom: 145px;
+}
+.completed .title {
+    margin-bottom: 65px;
+}
+.completed__list {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.completed__item {
+    margin-right: 23px;
+    position: relative;
+    border-radius: 5px;
+    width: 557px;
+    height: 394px;
+}
+.completed__item:last-child {
+    margin-right: 0;
+}
+.completed__item:nth-child(1) {
+    background: url('../img/before-game1.png') center center/cover;
+}
+.completed__item:nth-child(2) {
+    background: url('../img/before-game2.png') center center/cover;
+}
+.completed__content {
+    padding-left: 31px;
+    padding-right: 50px;
+    position: absolute;
+    bottom: 25px;
+}
+.completed__meta {
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 12px;
+}
+.completed__subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
