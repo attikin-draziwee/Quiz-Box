@@ -28,7 +28,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1140px;
+    max-width: 1142px;
     width: 100%;
 }
 .button {
@@ -141,6 +141,7 @@ body {
 .contact {
     display: inline-block;
     vertical-align: middle;
+    float: right;
 }
 .contact__phone {
     color: inherit;
@@ -171,6 +172,7 @@ body {
 .social__list {
     list-style: none;
     display: inline-block;
+    vertical-align: middle;
 }
 .social__item {
     display: inline-block;
