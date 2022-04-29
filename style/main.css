@@ -109,6 +109,12 @@ p {
   vertical-align: middle;
   content: url("../icons/main/store-new-badges.png");
 }
+.title--mb51 {
+  margin-bottom: 51px;
+}
+.title--mb58 {
+  margin-bottom: 58px;
+}
 
 .paginator {
   display: flex;
@@ -194,7 +200,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 545px;
 }
 .newest__list {
   color: #000;
@@ -248,7 +253,6 @@ p {
 }
 
 .completed__container {
-  min-height: 565px;
   margin-bottom: 243px;
   display: flex;
   justify-content: space-between;
@@ -257,6 +261,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 58px;
 }
 .completed__item {
   border-radius: 5px;
