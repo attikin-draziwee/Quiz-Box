@@ -1,0 +1,14 @@
+.top-line {
+    background: url('../../img/main/background-1.png') center center/auto no-repeat;
+}
+.top-line .container{
+    min-height: 418px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 23.5px;
+}
+.top-line__title {
+    font-size: 72px;
+    font-weight: bold;
+}
