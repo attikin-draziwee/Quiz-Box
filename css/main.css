@@ -1,16 +1,10 @@
-@import url('base.css');
-@import url('header.css');
-@import url('hero.css');
-@import url('newest.css');
-@import url('completed.css');
-@import url('about-us.css');
-@import url('footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('./layout/normalize.css');
+@import url('./layout/base.css');
 
-body {
-    background-color: #17191c;
-}
-.wrapper__content {
-    background: url('../img/background-1.png') no-repeat, url('../img/background-2.png') no-repeat;
-    background-position: 0 0, 0 1762px;
-    color: #FFF;
-}
+@import url('./blocks/hero.css');
+@import url('./blocks/header.css');
+@import url('./blocks/newest.css');
+@import url('./blocks/completed.css');
+@import url('./blocks/about.css');
+@import url('./blocks/footer.css');

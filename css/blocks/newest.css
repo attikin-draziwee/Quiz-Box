@@ -1,0 +1,62 @@
+.newest {
+    margin-bottom: 140px;
+}
+.newest__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.newest__item {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: #FFF;
+    width: calc(100% / 3 - 18px);
+    min-height: 449px;
+    border-radius: 5px;
+}
+.newest__thumb {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.newest__content {
+    padding: 40px 38px 26px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    flex-grow: 1;
+}
+.newest__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+.newest__metas {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.newest__meta {
+    display: inline-block;
+    vertical-align: middle;
+    color: #666666;
+}
+.newest__meta--time::before, .newest__meta--qa::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: url('../../icons/main/clock.png');
+    margin-right: 10px;
+}
+.newest__meta--qa::before {
+    content: url('../../icons/main/qa.png');
+}
+.newest__desc {
+    flex: 1;
+}
+.newest__desc p{
+    color: #303030;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 24.5px;
+}
