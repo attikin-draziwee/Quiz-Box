@@ -285,7 +285,7 @@ p {
 .breadcrumbs__item::after {
     content: '/';
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 5px 0 0;
 }
 .breadcrumbs__link--active {
     font-weight: bold;
