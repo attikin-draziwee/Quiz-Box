@@ -250,6 +250,35 @@ p {
     line-height: 1.5em;
 }
 
+.game {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game__img {
+    flex-basis: 170%;
+    height: 100%;
+    margin-right: 56px;
+}
+.game__pic {
+    width: 100%;
+    border-radius: 5px;
+}
+.game__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.game__title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.game__desc p {
+    line-height: 1.69em;
+    color: #303030;
+}
+
 .paginator {
     display: flex;
     justify-content: center;
