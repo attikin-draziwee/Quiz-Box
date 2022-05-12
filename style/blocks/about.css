@@ -3,7 +3,7 @@
     z-index: 5;
     margin-bottom: 53px;
 }
-.about .container{
+.about__container{
     display: flex;
     justify-content: flex-end;
 }

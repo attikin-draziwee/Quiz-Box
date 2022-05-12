@@ -28,6 +28,11 @@ address {
     font-style: inherit;
 }
 
+input {
+    border: none;
+    color: inherit;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -70,7 +75,7 @@ p {
     background: linear-gradient(87.62deg, #8F00FF -2.44%, #00A3FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-block: 5px;
+    padding-block: .5em;
 }
 
 .menu {
@@ -80,7 +85,11 @@ p {
 .menu__list {
     justify-content: space-between;
 }
+.menu__link {
+    transition: .3s;
+}
 .menu__link:hover {
+    transition: .3s;
     color: var(--accent-color);
 }
 
@@ -93,16 +102,67 @@ p {
     font-size: 26px;
     line-height: 1.45em;
 }
+.contacts__dropdown {
+    position: relative;
+}
 .contacts__dropdown-title {
+    position: relative;
     text-decoration: underline;
     cursor: pointer;
     font-size: 13px;
     line-height: 1.54em;
     color: #98A4A8;
+    transition: .3s;
 }
-.contacts__dropdown-title:hover {
+.contacts__dropdown:hover .contacts__dropdown-title {
+    transition: .3s;
     color: inherit;
 }
+.contacts__dropdown:hover .contacts__dropdown-desc{
+    left: 0;
+    opacity: 1;
+}
+.contacts__dropdown:hover .contacts__dropdown-desc::after {
+    content: '';
+    width: 100%;
+    height: 11px;
+    position: absolute;
+    top: -11px;
+    left: 0;
+}
+
+.contacts__dropdown-desc {
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+    transition: opacity .3s ease-in;
+    transform: translateX(-38%) translateY(9px);
+    background-color: #EDEDED;
+    color: #000;
+    font-weight: 600;
+    min-width: 158px;
+    width: 100%;
+    min-height: 69px;
+    padding: 13px 18px;
+    font-size: 13px;
+    line-height: 1.6em;
+    border-radius: 5px;
+}
+.contacts__dropdown-desc--bold {
+    font-weight: bold;
+}
+.contacts__dropdown-desc::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    right: 40px;
+    width: 0px;
+    height: 0px;
+    border: 11px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #EDEDED;
+}
+
 .contacts__info {
     font-size: 11px;
     line-height: 1.8em;
@@ -116,11 +176,30 @@ p {
 .social__list {
     justify-content: space-between;
 }
-.social__icon {
+.social__link {
+    display: block;
     opacity: 0.2;
+    transition: .3s ease-out;
 }
-.social__icon:hover {
+.social__link:hover {
     opacity: 1;
+    transition: .3s ease-in;
+}
+.social__link--telegram {
+    width: 36px; height: 36px;
+    background: url('./../../icons/socials.png') -10px -66px;
+}
+.social__link--vk {
+    width: 36px; height: 36px;
+    background: url('./../../icons/socials.png') -66px -66px;
+}
+.social__link--facebook {
+    width: 36px; height: 36px;
+    background: url('./../../icons/socials.png') -10px -10px;
+}
+.social__link--instagram {
+    width: 36px; height: 36px;
+    background: url('./../../icons/socials.png') -66px -10px;
 }
 
 .button, .button--game {
@@ -131,6 +210,7 @@ p {
     padding: 18px 40px;
     border-radius: 5px;
     background-color: var(--accent-color);
+    transition: .5s ease-in;
 }
 .button--game {
     background: transparent;
@@ -139,6 +219,7 @@ p {
 }
 .button:hover {
     background-color: #741BBA;
+    transition: .5s ease-out;
 }
 .button--empty {
     padding: 16px 30px;
@@ -158,6 +239,14 @@ p {
 .button--white:hover {
     background: #FFF;
     color: var(--accent-color);
+}
+.button--send {
+    background-color: #8E8E8E;
+    transition: .3s ease-in;
+}
+.button--send:hover {
+    background-color: #2B2B2B;
+    transition: .3s ease-out;
 }
 
 .title {
@@ -180,6 +269,10 @@ p {
 }
 .title--about {
     margin-bottom: 0px;
+}
+.title--form {
+    font-size: 48px;
+    margin-bottom: 77px;
 }
 
 .cards {
@@ -292,14 +385,16 @@ p {
     text-align: center;
     margin-right: 2px;
     font-weight: bold;
+    border-radius: 50%;
+    transition: .5s ease-in;
 }
 .paginator__item:last-of-type {
     margin-right: 0;
 }
 .paginator__item:hover {
-    border-radius: 50%;
     background-color: var(--accent-color);
     color: #FFF;
+    transition: .2s ease-out;
 }
 
 .breadcrumbs {
@@ -319,4 +414,96 @@ p {
 .breadcrumbs__item:last-of-type::after {
     content: '';
     text-decoration: none;
+}
+
+.feedback {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #F4F5F5;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 557px;
+    height: 100%;
+    padding: 50px 31px 41px 28px;
+    color: #1A1B1E;
+}
+.feedback__header {
+    display: flex;
+    margin-bottom: 27px;
+}
+.feedback__avatar {
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+}
+.feedback__header-left {
+    margin-right: 22px;
+}
+.feedback__header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.feedback__name {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.75em;
+    display: inline-block;
+    vertical-align: top;
+    transition: .4s;
+}
+.feedback__name--vk:hover {
+    text-decoration: underline;
+    color: #2E77A4;
+    transition: .2s;
+}
+.feedback__name--vk::after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    background: url('../../icons/socials_colorized.png') center center/auto no-repeat;   
+    margin-left: 7px;
+    padding-top: 5px;
+}
+.feedback__tags {
+    display: flex;
+    flex-direction: flex-start;
+    flex-wrap: wrap;
+}
+.tag {
+    font-size: 13px;
+    padding: 9px 15px 10px 15px;
+    border-radius: 35px;
+    margin-right: 15px;
+    background-color: #E7E7E7;
+    transition: .3s;
+    user-select: none;
+}
+.tag--active, .controls__checkbox:checked~.controls__tag {
+    transition: .3s;
+    background-color: #B9EAE4;
+}
+.feedback__tag:last-of-type {
+    margin-right: 0;
+}
+.feedback__title {
+    font-size: 30px;
+    line-height: 1.4em;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+.feedback__desc {
+    line-height: 1.69em;
+    color: #818181;
+    flex: 1;
+    margin-bottom: 24px;
+}
+.feedback__meta {
+    font-size: 14px;
+    line-height: 1.93em;
+    font-weight: 600;
 }

@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url('./layout/base.css');
 
+@import url('./blocks/hello.css');
 @import url('./blocks/hero.css');
 @import url('./blocks/header.css');
 @import url('./blocks/top-line.css');
+@import url('./blocks/reviews.css');
 @import url('./blocks/games.css');
 @import url('./blocks/newest.css');
 @import url('./blocks/completed.css');
+@import url('./blocks/banner.css');
 @import url('./blocks/about.css');
 @import url('./blocks/partners.css');
+@import url('./blocks/form.css');
 @import url('./blocks/footer.css');

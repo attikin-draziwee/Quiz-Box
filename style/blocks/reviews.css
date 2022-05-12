@@ -1,0 +1,22 @@
+.review {
+    background-color: #fff;
+}
+.review__container {
+    min-height: 1578px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 98px;
+    padding-bottom: 86px;
+    color: #000;
+}
+.reviews__list {
+    display: block;
+    column-count: 2;
+    column-gap: 30px;
+    margin-bottom: 44px;
+}
+.reviews__item {
+    margin-bottom: 17px;
+}

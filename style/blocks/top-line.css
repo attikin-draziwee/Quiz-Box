@@ -1,7 +1,7 @@
 .top-line {
     background: url('../../img/main/background-1.png') center center/auto no-repeat;
 }
-.top-line .container{
+.top-line__container{
     min-height: 418px;
     display: flex;
     flex-direction: column;
