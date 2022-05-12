@@ -66,6 +66,7 @@
     justify-content: flex-end;
 }
 .form__button {
+    cursor: pointer;
     margin-right: 24px;
 }
 .form__button:last-of-type {
