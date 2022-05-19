@@ -1,6 +1,9 @@
 .review {
     background-color: #fff;
 }
+.review__title {
+    display: none;
+}
 .review__container {
     min-height: 1578px;
     height: 100%;
